@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 .title("Event Management Rest APIs")
                 .description("This page lists all the rest apis for Event Management App.")
                 .version("1.0-SNAPSHOT")
-                .contact(new Contact("Bhushan Deshmukh", "www.youtube.com", "bhushand315@gmail.com"))
+                .contact(new Contact("Bhushan Deshmukh", "https://github.com/bhushandesh315/EventManagment/tree/master/EventManagmentSystem", "bhushand315@gmail.com"))
                 .build();
 
     }
