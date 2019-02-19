@@ -1,24 +1,38 @@
 # EventManagment
 
+Clone project from git by using following url
+
+############    https://github.com/bhushandesh315/EventManagment.git   ##################
+
+
+
 1)Enviornment Setup required JDK 1.8 and Maven to run application
 
 
-2) Start application by running EventManagmentSystemApplication
 
-3) After starting application click on below url so that all events should be load in h2 database
-
-  url :  http://localhost:8191/Event/allEvents
-
-4) To check event by category and location click below url so that we get sorted by category event
+############    follow below steps in sequence    ##############
 
 
- url for london and MUSIC :  http://localhost:8191/Event/getEventByCategory?category=MUSIC&location=London
- url for london and BLOOD_DONATION :   http://localhost:8191/Event/getEventByCategory?category=BLOOD_DONATION&location=London
- url for london and MUSIC :  http://localhost:8191/Event/getEventByCategory?category=MUSIC&location=India
 
-5) For api documentation find below url for swagger
+
+2) Start application by running DiscountServicesApplication.java
+
+
+3) After starting application click on below url so that all Discounts should be load in h2 database
+
+  url :  http://localhost:8080
+
+4) To check Discount by userType as Standard or Premium click below url modify amount as per your requirment you should get
+discount amount in return
+
+
+    a) http://localhost:8080/Premium/5500
+    b) http://localhost:8080/Standard/3500
+
+
+5) Junit Testing run
   
-   url swagger : http://localhost:8191/swagger-ui.html#/
+   DiscountServicesApplicationTest.java
 
 6) For git hub link find below link
 
