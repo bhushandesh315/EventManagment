@@ -1,4 +1,4 @@
-# EventManagment
+# TaxService
 
 Clone project from git by using following url
 
@@ -15,24 +15,52 @@ Clone project from git by using following url
 
 
 
-2) Start application by running DiscountServicesApplication.java
+2) Start application by running TaxServiceApplication.java
 
 
-3) After starting application click on below url so that all Discounts should be load in h2 database
+3) After starting application hit below url by passing input as given below through postman .
 
-  url :  http://localhost:8080
-
-4) To check Discount by userType as Standard or Premium click below url modify amount as per your requirment you should get
-discount amount in return
+url :  http://localhost:8281/taxService/invoice
 
 
-    a) http://localhost:8080/Premium/5500
-    b) http://localhost:8080/Standard/3500
+Input :
 
 
-5) Junit Testing run
+[
+    {
+        "amount": 300,
+        "category": "B"
+    },
+    {
+        "amount": 200,
+        "category": "A"
+    },
+    {
+        "amount": 400,
+        "category": "C"
+    },
+     {
+        "amount": 1400,
+        "category": "A"
+    }
+]
+
   
-   DiscountServicesApplicationTest.java
+On basis of above input we get taxable amount and sum of toatal amount depend on the basis of category A B and C.
+You can increase as many as input as these are the items which are scanned and come as input to machine.
+
+
+for above input output should be
+
+For Category :B percentage of tax applied :20% Total Amount by applying tax on 300 is 360
+For Category :A percentage of tax applied :10% Total Amount by applying tax on 200 is 220
+For Category :C percentage of tax applied :0% Total Amount by applying tax on 400 is 400
+For Category :A percentage of tax applied :10% Total Amount by applying tax on 1400 is 1540
+Total Bill Amount is :: 2520
+
+4) Junit Testing run
+  
+   TaxServiceApplicationTest.java
 
 6) For git hub link find below link
 
